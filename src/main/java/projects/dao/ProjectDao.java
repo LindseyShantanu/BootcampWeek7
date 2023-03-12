@@ -65,7 +65,7 @@ public class ProjectDao extends DaoBase {
 	}
 
 	public List<Project> fetchAllProjects() {
-		String sql = "SELECT * FROM " +PROJECT_TABLE + " ORDER BY project_name";
+		String sql = "SELECT * FROM " + PROJECT_TABLE + " ORDER BY project_name";
 		
 		try(Connection conn = DbConnection.getConnection()){
 			startTransaction(conn);
@@ -90,7 +90,7 @@ public class ProjectDao extends DaoBase {
 	}
 
 	public Optional<Project> fetchProjectById(Integer projectId) {
-		String sql = "SELECT * FROM " +PROJECT_TABLE + " WHERE project_id = ?";
+		String sql = "SELECT * FROM " + PROJECT_TABLE + " WHERE project_id = ?";
 		
 		try(Connection conn = DbConnection.getConnection()){
 			startTransaction(conn);
