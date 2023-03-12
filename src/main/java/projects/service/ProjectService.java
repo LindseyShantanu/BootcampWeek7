@@ -1,10 +1,8 @@
 package projects.service;
 
 import projects.entity.Project;
-
 import java.util.List;
 import java.util.NoSuchElementException;
-
 import projects.dao.ProjectDao;
 
 public class ProjectService {
@@ -29,3 +27,4 @@ public class ProjectService {
 	
 
 }
+
